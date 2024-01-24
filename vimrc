@@ -81,6 +81,9 @@ set wildmenu
 " Make wildmenu behave like similar to Bash completion.
 set wildmode=list:longest
 
+" allow edits in vimdiff
+set noro
+
 " There are certain files that we would never want to edit with Vim.
 " Wildmenu will ignore files with these extensions.
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
@@ -93,6 +96,8 @@ call plug#begin('~/.vim/plugged')
 	Plug 'dense-analysis/ale'
 	Plug 'preservim/nerdtree'
 	Plug 'itchyny/lightline.vim'
+	Plug 'rust-lang/rust.vim'
+	Plug 'tanvirtin/monokai.nvim'
 
 call plug#end()
 
